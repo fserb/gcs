@@ -1,0 +1,25 @@
+{
+  "name": "gcs",
+  "title": "GCS",
+  "description": "",
+  "dependencies": {},
+  "devDependencies": {
+    "cors": "^2.8.1",
+    "dateformat": "^1.0.12",
+    "express": "^4.14.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-eslint": "^19.0.0",
+    "grunt-rollup": "^1.0.1",
+    "rollup": "^0.41.4",
+    "serve-index": "^1.8.0",
+    "uglify-js": "git+https://github.com/mishoo/UglifyJS2.git#harmony"
+  },
+  "scripts": {
+    "build": "npm install && grunt",
+    "start": "grunt watch",
+    "test": "grunt",
+    "precommit": "grunt lint"
+  }
+}
